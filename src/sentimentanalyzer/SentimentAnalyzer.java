@@ -31,6 +31,7 @@ public class SentimentAnalyzer {
         try {
             Query query = new Query("Obama");
             QueryResult result;
+            
             result = twitter.search(query);
             List<Status> tweets = result.getTweets();
             for (Status tweet : tweets) {
