@@ -26,12 +26,13 @@ public class SentimentAnalyzer {
                 .setOAuthConsumerSecret("MHdm8mA5Ba3UQerzbDjg4rFTPQb7jtdd38Dv0rrlSEvRD3E3XC")
                 .setOAuthAccessToken("829974056174710785-f9MtpkICtKDzNKxVeJGVKFk1F1MjyNe")
                 .setOAuthAccessTokenSecret("VClbXFMZrpU40ORJDt9mKEohAUdbz2kRM0uFNKRXanmsY");
+        
+        
         TwitterFactory tf=new TwitterFactory(cb.build());
          Twitter twitter = tf.getInstance();
         try {
             Query query = new Query("Obama");
             QueryResult result;
-            
             result = twitter.search(query);
             List<Status> tweets = result.getTweets();
             for (Status tweet : tweets) {
