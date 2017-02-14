@@ -22,10 +22,10 @@ public class SentimentAnalyzer {
     public static void main(String[] args) {
         // TODO code application logic here
         ConfigurationBuilder cb=new ConfigurationBuilder();
-        cb.setDebugEnabled(true).setOAuthConsumerKey("2u0Pr0nApKkZYKMhkgymXS3zg")
-                .setOAuthConsumerSecret("MHdm8mA5Ba3UQerzbDjg4rFTPQb7jtdd38Dv0rrlSEvRD3E3XC")
-                .setOAuthAccessToken("829974056174710785-f9MtpkICtKDzNKxVeJGVKFk1F1MjyNe")
-                .setOAuthAccessTokenSecret("VClbXFMZrpU40ORJDt9mKEohAUdbz2kRM0uFNKRXanmsY");
+        cb.setDebugEnabled(true).setOAuthConsumerKey("")
+                .setOAuthConsumerSecret("")
+                .setOAuthAccessToken("")
+                .setOAuthAccessTokenSecret("");
         
         
         TwitterFactory tf=new TwitterFactory(cb.build());
